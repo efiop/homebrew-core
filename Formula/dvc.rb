@@ -3,8 +3,8 @@ class Dvc < Formula
 
   desc "Git for data science projects"
   homepage "https://dvc.org"
-  url "https://files.pythonhosted.org/packages/72/1b/8e38e107e1e993c96e65063d92bc61a2c81a12b4837c70adce597cf72ae7/dvc-1.10.2.tar.gz"
-  sha256 "871feaf6d6526c8be3ad9d3e8632b2d9bc1aeaa124de53d99f5d92d16d48204b"
+  url "https://github.com/iterative/dvc/archive/1.11.2.tar.gz"
+  sha256 "657c09be5f48dfa8c804c268fcadb01b0248921f8b677a99ecd67ea039dfc349"
   license "Apache-2.0"
 
   livecheck do
@@ -79,8 +79,8 @@ class Dvc < Formula
   end
 
   resource "dulwich" do
-    url "https://files.pythonhosted.org/packages/38/63/d13c38c45e44b616ca7160bd9132387593f779feffeb0ea751ecc3e2ee71/dulwich-0.20.13.tar.gz"
-    sha256 "a5edcd168c66a10f9a663950eb3e7bd6c8e5a2ecf10495331f44c549e03c36c2"
+    url "https://files.pythonhosted.org/packages/c7/6d/b5ee7c6a5d202b41efa356a56efd5b1990eab518d9e583e621da0b1cf509/dulwich-0.20.14.tar.gz"
+    sha256 "21d6ee82708f7c67ce3fdcaf1f1407e524f7f4f7411a410a972faa2176baec0d"
   end
 
   resource "flatten-dict" do
@@ -134,8 +134,8 @@ class Dvc < Formula
   end
 
   resource "mailchecker" do
-    url "https://files.pythonhosted.org/packages/ce/cd/748b30ce4f34cd0f925daa969ea6433e422e85d85d1453a5bd6570afd1c3/mailchecker-3.3.17.tar.gz"
-    sha256 "69148b2c6131f4f68ad45f0a8c7a90e6c2ada4ee7cd37302a84cfc9df4c167e3"
+    url "https://files.pythonhosted.org/packages/e0/38/8a6c678ccffee736e6663066fe5c61570fac42bc3847f67f2e37b28d036d/mailchecker-4.0.0.tar.gz"
+    sha256 "ed535520f049c06b982beaf408635aa39697c1d80790425c12334b4965de56eb"
   end
 
   resource "nanotime" do
@@ -149,8 +149,8 @@ class Dvc < Formula
   end
 
   resource "packaging" do
-    url "https://files.pythonhosted.org/packages/55/fd/fc1aca9cf51ed2f2c11748fa797370027babd82f87829c7a8e6dbe720145/packaging-20.4.tar.gz"
-    sha256 "4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8"
+    url "https://files.pythonhosted.org/packages/16/7c/33ae3aa02eb10ca726b21aa88d338e3f619c674e4fb8544eb352330d880a/packaging-20.7.tar.gz"
+    sha256 "05af3bb85d320377db281cf254ab050e1a7ebcbf5410685a9a407e18a1f81236"
   end
 
   resource "pathlib2" do
@@ -199,8 +199,8 @@ class Dvc < Formula
   end
 
   resource "python-benedict" do
-    url "https://files.pythonhosted.org/packages/76/ec/e59428181e28319d981fd38a09cad64a6038caacac3abb314558c173599f/python-benedict-0.22.0.tar.gz"
-    sha256 "2a5fda1307b0f0ecaf308706a169e31c7141bfbe03df8775d72be3b93d09091d"
+    url "https://files.pythonhosted.org/packages/6c/22/0382506ff4291a8faca58b91eb994dcd697d533cd0f449db22471a697be1/python-benedict-0.22.2.tar.gz"
+    sha256 "20fa5a2e0fe920f65567a77e8173e3edd8f532a7c5b5cd320855a6077de67ee8"
   end
 
   resource "python-dateutil" do
@@ -224,8 +224,8 @@ class Dvc < Formula
   end
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/c5/5f/f0a36649beefeaa70c1086451fc936b22afb0c34879930d97d3b129aadc6/rich-9.2.0.tar.gz"
-    sha256 "7003a1cce3b79bf4d34a26099b00a4b67e208d4a6896a1c25368603d5f49f295"
+    url "https://files.pythonhosted.org/packages/de/11/2a232286a0831e4f560b5fba6dfaf344a1afa2bab1bb7a03f8235f3e149c/rich-9.3.0.tar.gz"
+    sha256 "ca1008c18e91c2d0345764ddb871cc284feadc467241fbb468f14280b791388a"
   end
 
   resource "ruamel.yaml" do
@@ -239,8 +239,8 @@ class Dvc < Formula
   end
 
   resource "shtab" do
-    url "https://files.pythonhosted.org/packages/e2/8b/606c8bc2cdeb7208196ce0e0b20444a79b7cfb3274909ffd6262b34a7e56/shtab-1.3.2.tar.gz"
-    sha256 "863d24ff40140c180921d91262c61126b227fe81564ee700ef8fb8c13a7a518a"
+    url "https://files.pythonhosted.org/packages/ef/14/6b75b49169e84019bdacecddb6137d01e005a5b3014c577e96bdd5131bca/shtab-1.3.3.tar.gz"
+    sha256 "1f7f263631acdf0a9e685bbf7126a0fa711c2d663db12441670b1cea3fa431d4"
   end
 
   resource "six" do
@@ -269,8 +269,8 @@ class Dvc < Formula
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/db/af/6af426ad64a4e89696069f8a87d985c10a79e4c6f975ac772b676afc21a5/tqdm-4.53.0.tar.gz"
-    sha256 "3d3f1470d26642e88bd3f73353cb6ff4c51ef7d5d7efef763238f4bc1f7e4e81"
+    url "https://files.pythonhosted.org/packages/3a/76/467422c5a0157c92a8b8e1ffe14411443682e2951e6f6dde3748e47b31ba/tqdm-4.54.0.tar.gz"
+    sha256 "5c0d04e06ccc0da1bd3fa5ae4550effcce42fcad947b4a6cafa77bdc9b09ff22"
   end
 
   resource "typing-extensions" do

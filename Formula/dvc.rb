@@ -16,6 +16,7 @@ class Dvc < Formula
 
   depends_on "pkg-config" => :build
   depends_on "libgit2" => :build
+  depends_on "rust" => :build
   depends_on "apache-arrow"
   depends_on "openssl@1.1"
   depends_on "python@3.9"

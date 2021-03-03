@@ -3,8 +3,8 @@ class Dvc < Formula
 
   desc "Git for data science projects"
   homepage "https://dvc.org"
-  url "https://files.pythonhosted.org/packages/fd/7c/7035a6fbba91298ed1d8504947f05412d6e9d06e7c026a1632d17b0661a9/dvc-1.11.16.tar.gz"
-  sha256 "016339ca6bcd33e674a118cbb5836ae8c014ad346da7dbd5f46f9192328f11ed"
+  url "https://files.pythonhosted.org/packages/5b/e0/966cd08cc41f33dbaa666286705bc196ff4524ff625aaeed383a2ebf0947/dvc-2.0.0.tar.gz"
+  sha256 "85690d95667c6360224f107161e5886ecdd25d570bac80593f64718438208623"
   license "Apache-2.0"
 
   bottle do
@@ -29,9 +29,24 @@ class Dvc < Formula
     sha256 "e0b274759bfbcb6eeb7c7b44a7a46391990a43ac77aa55359b075765b54d9f5d"
   end
 
+  resource "cached-property" do
+    url "https://files.pythonhosted.org/packages/61/2c/d21c1c23c2895c091fa7a91a54b6872098fea913526932d21902088a7c41/cached-property-1.5.2.tar.gz"
+    sha256 "9fa5755838eecbb2d234c3aa390bd80fbd3ac6b6869109bfc1b499f7bd89a130"
+  end
+
+  resource "cachetools" do
+    url "https://files.pythonhosted.org/packages/74/17/5735dd9f015f03d2d928ea108f3c02075b784ceed05d32a98e7e44ddd114/cachetools-4.2.1.tar.gz"
+    sha256 "f469e29e7aa4cff64d8de4aad95ce76de8ea1125a16c68e0d93f65c3c3dc92e9"
+  end
+
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/06/a9/cd1fd8ee13f73a4d4f491ee219deeeae20afefa914dfb4c130cfc9dc397a/certifi-2020.12.5.tar.gz"
     sha256 "1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c"
+  end
+
+  resource "cffi" do
+    url "https://files.pythonhosted.org/packages/a8/20/025f59f929bbcaa579704f443a438135918484fffaacfaddba776b374563/cffi-1.14.5.tar.gz"
+    sha256 "fd78e5fee591709f32ef6edb9a015b4aa1a5022598e36227500c8f4e02328d9c"
   end
 
   resource "chardet" do
@@ -64,6 +79,11 @@ class Dvc < Formula
     sha256 "1adec0d67cdf6166bda96ae2934ddb5e54433998ceab63c984574d187cc563d2"
   end
 
+  resource "diskcache" do
+    url "https://files.pythonhosted.org/packages/49/07/079b8b4eb2aba194fca4562c7f014ea45a40130ebff539628c05c52d9050/diskcache-5.2.1.tar.gz"
+    sha256 "1805acd5868ac10ad547208951a1190a0ab7bbff4e70f9a07cde4dbdfaa69f64"
+  end
+
   resource "distro" do
     url "https://files.pythonhosted.org/packages/a6/a4/75064c334d8ae433445a20816b788700db1651f21bdb0af33db2aab142fe/distro-1.5.0.tar.gz"
     sha256 "0e58756ae38fbd8fc3020d54badb8eae17c5b9dcbed388b17bb55b8a5928df92"
@@ -75,8 +95,8 @@ class Dvc < Formula
   end
 
   resource "dulwich" do
-    url "https://files.pythonhosted.org/packages/b9/a7/d37a55a56958d80037c42b76b0c872fb7fb583102a28c29b5a05c978677d/dulwich-0.20.19.tar.gz"
-    sha256 "7a5c976c5ce737ec207be1815c654351bf1d0387fc6480ed32cd58c9d0e2cda9"
+    url "https://files.pythonhosted.org/packages/74/a8/6e7cba1c5a37169e7f79343b6ab4a1f58ba4b9ddcc1322e561f9b193f759/dulwich-0.20.20.tar.gz"
+    sha256 "426959b9705fadcc6c820e5adf3291d71a48aba0afccf7411422e3308f115f87"
   end
 
   resource "flatten-dict" do
@@ -87,6 +107,11 @@ class Dvc < Formula
   resource "flufl.lock" do
     url "https://files.pythonhosted.org/packages/1e/68/393c148df629f90a919de653ebb967a8bd8c83d07d2bc3150ca0faff3940/flufl.lock-3.2.tar.gz"
     sha256 "a8d66accc9ab41f09961cd8f8db39f9c28e97e2769659a3567c63930a869ff5b"
+  end
+
+  resource "fsspec" do
+    url "https://files.pythonhosted.org/packages/de/db/67e67696a979fb4a356ec123f34b9ea2b3886c3a4232483e506ab5e78378/fsspec-0.8.7.tar.gz"
+    sha256 "4b11557a90ac637089b10afa4c77adf42080c0696f6f2771c41ce92d73c41432"
   end
 
   resource "ftfy" do
@@ -110,8 +135,43 @@ class Dvc < Formula
   end
 
   resource "GitPython" do
-    url "https://files.pythonhosted.org/packages/d4/a9/60a66a0e8b452726cfc5939242ffa7158c1a9a78ff628bd4540b49156240/GitPython-3.1.13.tar.gz"
-    sha256 "8621a7e777e276a5ec838b59280ba5272dd144a18169c36c903d8b38b99f750a"
+    url "https://files.pythonhosted.org/packages/5f/f2/ea3242d97695451ab1521775a85253e002942d2c8f4519ae1172c0f5f979/GitPython-3.1.14.tar.gz"
+    sha256 "be27633e7509e58391f10207cd32b2a6cf5b908f92d9cd30da2e514e1137af61"
+  end
+
+  resource "google-api-core" do
+    url "https://files.pythonhosted.org/packages/de/48/6a87d2ee7c06ab06dd9a3f95770a9c44931f275e6c545f4f15f9a2dadf23/google-api-core-1.26.0.tar.gz"
+    sha256 "4230ec764d48ca934fe69b85cc217e31e844e176f68df93e252acd55350e730b"
+  end
+
+  resource "google-auth" do
+    url "https://files.pythonhosted.org/packages/35/1a/680f98973d8e19f9802f70ac9baf0d5538af727da287463ac4fa608e1834/google-auth-1.27.0.tar.gz"
+    sha256 "da5218cbf33b8461d7661d6b4ad91c12c0107e2767904d5e3ae6408031d5463e"
+  end
+
+  resource "google-cloud-core" do
+    url "https://files.pythonhosted.org/packages/c5/c3/7f1c976c50ecd5c1ab247d7aca7bdf2168c15be03221b42cbc2c56c38e88/google-cloud-core-1.6.0.tar.gz"
+    sha256 "c6abb18527545379fc82efc4de75ce9a3772ccad2fc645adace593ba097cbb02"
+  end
+
+  resource "google-cloud-storage" do
+    url "https://files.pythonhosted.org/packages/0f/4d/03582c8659680e0c60c55d57381791c03e03f0c3f656f069ec68ec532c92/google-cloud-storage-1.19.0.tar.gz"
+    sha256 "21f94c073eb9be34ca545c4eef28ae66947386687d99cd3a82400bf1504cfbd8"
+  end
+
+  resource "google-crc32c" do
+    url "https://files.pythonhosted.org/packages/a9/2c/2a055430b83aa62e74028423e562e0df70cd1146535057587a1167f6fa81/google-crc32c-1.1.2.tar.gz"
+    sha256 "dff5bd1236737f66950999d25de7a78144548ebac7788d30ada8c1b6ead60b27"
+  end
+
+  resource "google-resumable-media" do
+    url "https://files.pythonhosted.org/packages/e9/31/40e70eb2a484995d80cf5dadad1257fb7cebacd1252f4850d284ec2ccf80/google-resumable-media-1.2.0.tar.gz"
+    sha256 "ee98b1921e5bda94867a08c864e55b4763d63887664f49ee1c231988f56b9d43"
+  end
+
+  resource "googleapis-common-protos" do
+    url "https://files.pythonhosted.org/packages/1f/4a/369a8b1cf12089c1a902101b0431729e02cd2dd4e390377c920aa1d3ccab/googleapis-common-protos-1.53.0.tar.gz"
+    sha256 "a88ee8903aa0a81f6c3cec2d5cf62d3c8aa67c06439b0496b49048fb1854ebf4"
   end
 
   resource "grandalf" do
@@ -160,8 +220,8 @@ class Dvc < Formula
   end
 
   resource "phonenumbers" do
-    url "https://files.pythonhosted.org/packages/ce/9a/b06647cedb6b0041c6619619157912e943025a61f831ee7096cc39c449f7/phonenumbers-8.12.18.tar.gz"
-    sha256 "0aa0f5e1382d292a7ff2f8bc08673126521461c7f908e0220756449a734d8fef"
+    url "https://files.pythonhosted.org/packages/7e/42/4d54cb5316d5c1a816615eec8da51459292f0dfcacae27efd2ef07e55868/phonenumbers-8.12.19.tar.gz"
+    sha256 "0f597b602e64af90c06b14c8223e94fdb0ed20f203e1c9785a8bbe4de00c45e8"
   end
 
   resource "ply" do
@@ -169,14 +229,39 @@ class Dvc < Formula
     sha256 "00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3"
   end
 
+  resource "protobuf" do
+    url "https://files.pythonhosted.org/packages/8d/7a/892037b229de84083196a66dc79b459821dbd254acf9fb6bfec642ef6a77/protobuf-3.15.3.tar.gz"
+    sha256 "f3348af83391cdb842030e774d9bb01565ed4c62c93554cd1c69723411ec5e9d"
+  end
+
+  resource "psutil" do
+    url "https://files.pythonhosted.org/packages/e1/b0/7276de53321c12981717490516b7e612364f2cb372ee8901bd4a66a000d7/psutil-5.8.0.tar.gz"
+    sha256 "0c9ccb99ab76025f2f0bbecf341d4656e9c1351db8cc8a03ccd62e318ab4b5c6"
+  end
+
   resource "pyasn1" do
     url "https://files.pythonhosted.org/packages/a4/db/fffec68299e6d7bad3d504147f9094830b704527a7fc098b721d38cc7fa7/pyasn1-0.4.8.tar.gz"
     sha256 "aef77c9fb94a3ac588e87841208bdec464471d9871bd5050a287cc9a475cd0ba"
   end
 
+  resource "pyasn1-modules" do
+    url "https://files.pythonhosted.org/packages/88/87/72eb9ccf8a58021c542de2588a867dbefc7556e14b2866d1e40e9e2b587e/pyasn1-modules-0.2.8.tar.gz"
+    sha256 "905f84c712230b2c592c19470d3ca8d552de726050d1d1716282a1f6146be65e"
+  end
+
+  resource "pycparser" do
+    url "https://files.pythonhosted.org/packages/0f/86/e19659527668d70be91d0369aeaa055b4eb396b0f387a4f92293a20035bd/pycparser-2.20.tar.gz"
+    sha256 "2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0"
+  end
+
   resource "pydot" do
     url "https://files.pythonhosted.org/packages/13/6e/916cdf94f9b38ae0777b254c75c3bdddee49a54cc4014aac1460a7a172b3/pydot-1.4.2.tar.gz"
     sha256 "248081a39bcb56784deb018977e428605c1c758f10897a339fce1dd728ff007d"
+  end
+
+  resource "pygit2" do
+    url "https://files.pythonhosted.org/packages/65/af/0544463f7eebb7a953767b55d101af021e3d94f5d12738efc4be01c10d55/pygit2-1.5.0.tar.gz"
+    sha256 "9711367bd05f96ad6fc9c91d88fa96126ba2d1f1c3ea6f23c11402c243d66a20"
   end
 
   resource "Pygments" do
@@ -214,6 +299,11 @@ class Dvc < Formula
     sha256 "69a517766e00c1268e5bbfc0d010a0a8508de0b18d30ad5a1ff357f8ae724270"
   end
 
+  resource "pytz" do
+    url "https://files.pythonhosted.org/packages/b0/61/eddc6eb2c682ea6fd97a7e1018a6294be80dba08fa28e7a3570148b4612d/pytz-2021.1.tar.gz"
+    sha256 "83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"
+  end
+
   resource "PyYAML" do
     url "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz"
     sha256 "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
@@ -225,8 +315,13 @@ class Dvc < Formula
   end
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/7b/5a/5ade9c4713b1745970b6276b6c7d5ae37d0cafd453c6c4f1a4b44833980a/rich-9.11.0.tar.gz"
-    sha256 "f8f08fdac6bd67dc2dd7fe976da702d748487aa9eb5d050c48b2321bc67ed659"
+    url "https://files.pythonhosted.org/packages/e0/f4/df55dc69153e1d67525f1663aec11da8db80d281a4400810a4cbbd6af251/rich-9.12.4.tar.gz"
+    sha256 "1e000895221df23cd7f828a9511c15d10189850d4f923b6d8c3d29a32ca95265"
+  end
+
+  resource "rsa" do
+    url "https://files.pythonhosted.org/packages/db/b5/475c45a58650b0580421746504b680cd2db4e81bc941e94ca53785250269/rsa-4.7.2.tar.gz"
+    sha256 "9d689e6ca1b3038bc82bf8d23e944b6b6037bc02301a574935b2dd946e0353b9"
   end
 
   resource "ruamel.yaml" do
@@ -240,8 +335,8 @@ class Dvc < Formula
   end
 
   resource "shtab" do
-    url "https://files.pythonhosted.org/packages/99/63/0100420a832f176285f28cef3aa2bd6ef249dd2e66a00601019630c5f4fe/shtab-1.3.4.tar.gz"
-    sha256 "353f2a3a5178cd2df8eb746e7ab26a5039a9989e4386de8fd239d8c1653a8887"
+    url "https://files.pythonhosted.org/packages/ae/b8/d80ecc4cd8d3ac5d776aea4c59c93faff5f3a8c1bc9370c0966708599731/shtab-1.3.5.tar.gz"
+    sha256 "3e7880f2778b659f4f01af07ab7b815b2786c257efa8ec52d6057e06a398a103"
   end
 
   resource "six" do
@@ -255,8 +350,8 @@ class Dvc < Formula
   end
 
   resource "tabulate" do
-    url "https://files.pythonhosted.org/packages/57/6f/213d075ad03c84991d44e63b6516dd7d185091df5e1d02a660874f8f7e1e/tabulate-0.8.7.tar.gz"
-    sha256 "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"
+    url "https://files.pythonhosted.org/packages/ae/3d/9d7576d94007eaf3bb685acbaaec66ff4cdeb0b18f1bf1f17edbeebffb0a/tabulate-0.8.9.tar.gz"
+    sha256 "eb1d13f25760052e8931f2ef80aaf6045a6cceb47514db8beab24cded16f13a7"
   end
 
   resource "text-unidecode" do
@@ -270,8 +365,8 @@ class Dvc < Formula
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/d4/2a/99ac62cb012d81ffd96a2ddd9eba54d942c56f9244feb58b6a9a49d547d8/tqdm-4.56.2.tar.gz"
-    sha256 "11d544652edbdfc9cc41aa4c8a5c166513e279f3f2d9f1a9e1c89935b51de6ff"
+    url "https://files.pythonhosted.org/packages/b1/43/5fbcc228769304f437f412b98be988121afff58245105ad4fdad7f8c1526/tqdm-4.58.0.tar.gz"
+    sha256 "c23ac707e8e8aabb825e4d91f8e17247f9cc14b0d64dd9e97be0781e9e525bba"
   end
 
   resource "typing-extensions" do

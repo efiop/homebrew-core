@@ -14,10 +14,10 @@ class Dvc < Formula
     sha256 cellar: :any, mojave:        "b66c4ef9651bf888a9596b0672df4f5a29fb6e78fda971ad2ca67a2510c3c865"
   end
 
-  depends_on "libgit2" => :build
   depends_on "pkg-config" => :build
   depends_on "rust" => :build
   depends_on "apache-arrow"
+  depends_on "libgit2"
   depends_on "openssl@1.1"
   depends_on "python@3.9"
 
